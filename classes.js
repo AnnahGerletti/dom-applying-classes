@@ -8,6 +8,7 @@ function start () {
   one()
   two()
   three()
+  makeVisable()
 
   // Your turn! Create a new function called `two`, then call it from here.
 }
@@ -31,3 +32,7 @@ function three(){
   three.classList.add('red')
 }
 // CREATE FUNCTION makeVisible HERE
+function makeVisable(){
+  var makeVisable = document.getElementsByClassName('invisible')[0]//why do you need to specify which class in the array?????
+  makeVisable.classList.toggle('visible')
+}
